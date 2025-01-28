@@ -20,7 +20,27 @@ project:
   output:
     type:
       - elf
-      - bin
+
+  # Post build steps to create separate binaries for MRAM and external flash sections
+  #
+  # NOTE: This is needed when enabling define: MODEL_IN_EXT_FLASH (setting output: type: -bin would be enough for MRAM build)
+  #       Alif SE Toolkit can program only the MRAM part
+  #       See flash programming options at:
+  #       https://github.com/alifsemi/alif_ml-embedded-evaluation-kit/blob/main/ML_Embedded_Evaluation_Kit.md#running-a-use-case-with-ml-model-data-in-external-flash
+  executes:
+    - execute: elf-to-bin-mram
+      run: arm-none-eabi-objcopy -O binary --remove-section *.at_ext_flash $input$ $output$
+      input:
+        - $elf()$
+      output:
+        - $OutDir()$/$Project$.bin
+
+    - execute: elf-to-bin-extflash
+      run: arm-none-eabi-objcopy -O binary --only-section *.at_ext_flash $input$ $output$
+      input:
+        - $elf()$
+      output:
+        - $OutDir()$/$Project$.extflash.bin
 
   groups:
     - group: Use Case
