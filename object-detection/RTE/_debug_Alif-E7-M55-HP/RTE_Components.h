@@ -15,6 +15,8 @@
  */
 #define CMSIS_device_header "M55_HP.h"
 
+/* ARM::Machine Learning:NPU Support:Ethos-U Driver&Generic U55@1.25.2 */
+#define RTE_ETHOS_U_CORE_DRIVER
 /* AlifSemiconductor::BSP:External peripherals:CAMERA Sensor ARX3A0@1.3.0 */
 #define RTE_Drivers_CAMERA_SENSOR_ARX3A0   1           /* Driver CAMERA Sensor */
 /* AlifSemiconductor::BSP:External peripherals:ILI9806E LCD panel@1.3.0 */
@@ -52,8 +54,6 @@
 #define RTE_Drivers_USART5   1           /* Driver UART5 */
 #define RTE_Drivers_USART6   1           /* Driver UART6 */
 #define RTE_Drivers_USART7   1           /* Driver UART7 */
-/* Arm::Machine Learning:NPU Support:Ethos-U Driver&Generic U55@1.23.2 */
-#define RTE_ETHOS_U_CORE_DRIVER
 /* tensorflow::Data Exchange:Serialization:flatbuffers&tensorflow@1.22.8 */
 #define RTE_DataExchange_Serialization_flatbuffers     /* flatbuffers */
 /* tensorflow::Data Processing:Math:gemmlowp fixed-point&tensorflow@1.22.8 */

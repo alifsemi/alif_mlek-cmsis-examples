@@ -9,7 +9,7 @@
 #ifndef PRE_INCLUDE_GLOBAL_H
 #define PRE_INCLUDE_GLOBAL_H
 
-/* Arm::Machine Learning:NPU Support:Ethos-U Driver&Generic U55@1.23.2 */
+/* ARM::Machine Learning:NPU Support:Ethos-U Driver&Generic U55@1.25.2 */
 // enabling global pre includes 
         #define ETHOSU_ARCH u55
 /* tensorflow::Machine Learning:TensorFlow:Kernel&Ethos-U@1.22.8 */

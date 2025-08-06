@@ -9,15 +9,15 @@ cbuild-pack:
     - resolved-pack: ARM::CMSIS-NN@4.0.0
       selected-by-pack:
         - ARM::CMSIS-NN@4.0.0
+    - resolved-pack: ARM::ethos-u-core-driver@1.25.2
+      selected-by-pack:
+        - ARM::ethos-u-core-driver@1.25.2
     - resolved-pack: ARM::ml-embedded-eval-kit-uc-api@22.8.0-Beta
       selected-by-pack:
         - ARM::ml-embedded-eval-kit-uc-api@22.8.0-Beta
     - resolved-pack: AlifSemiconductor::Ensemble@1.3.0
       selected-by-pack:
         - AlifSemiconductor::Ensemble@1.3.0
-    - resolved-pack: Arm::ethos-u-core-driver@1.23.2
-      selected-by-pack:
-        - Arm::ethos-u-core-driver@1.23.2
     - resolved-pack: tensorflow::flatbuffers@1.22.8
       selected-by-pack:
         - tensorflow::flatbuffers@1.22.8

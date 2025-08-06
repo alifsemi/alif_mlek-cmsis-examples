@@ -70,7 +70,7 @@ layer:
         - file: ./src/ethosu_platform_callbacks.c
 
   components:
-    - component: Arm::Machine Learning:NPU Support:Ethos-U Driver&Generic U55
+    - component: ARM::Machine Learning:NPU Support:Ethos-U Driver
     - component: tensorflow::Machine Learning:TensorFlow:Kernel&Ethos-U
 
     - component: AlifSemiconductor::Device:SOC Peripherals:USART
